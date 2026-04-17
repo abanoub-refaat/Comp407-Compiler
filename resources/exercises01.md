@@ -112,7 +112,7 @@ factor: INT | ID | '(' expr ')';       // highest (atomic values)
 
 Parse tree for `3 + 4 * 2`:
 
-```
+```text
 expr
 ├── term(3)
 ├── '+'
@@ -150,7 +150,7 @@ A rule is left-recursive when its first alternative starts with itself.
 
 Boolean expressions follow the same layered precedence pattern:
 
-```
+```text
 ||   →  lowest
 &&   →  higher
 comparisons (>, <, ==, !=)  →  highest
@@ -167,7 +167,7 @@ boolFactor: expr BOPR expr | '(' boolExpr ')';
 
 ### Full Precedence Chain
 
-```
+```text
 boolExpr    (||)
   boolTerm  (&&)
     boolFactor  (comparisons)

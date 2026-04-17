@@ -1,0 +1,16 @@
+# ANTLR generated files
+**/output/
+.antlr/
+*.tokens
+
+# Compiled Java files
+**/*.class
+
+# IDE files
+.vscode/
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# OS garbage
+.DS_Store
+Thumbs.db
